@@ -64,12 +64,15 @@
 
 | 模型简称                           | 模型文件大小 | Google下载 |                          百度盘下载                          |
 | :--------------------------------- | :--: | :--------: | :----------------------------------------------------------: |
-| **Chinese-MobileBERT-base-f2** |  |     
-| **Chinese-MobileBERT-base-f4** |  |      
-| **Chinese-MobileBERT-large-f2** |  | 
-| **Chinese-MobileBERT-large-f4** |  |  
+| **Chinese-MobileBERT-base-f2** | 672MB |TBA|[TensorFlow（密码：56bj）](https://pan.baidu.com/s/16g1LgXXAV01I-cFgPdeOow?pwd=56bj)|
+| **Chinese-MobileBERT-base-f4** | 737MB |TBA|[TensorFlow（密码：v2v7）](https://pan.baidu.com/s/16SGBJhWFYru47EEyTZJljA?pwd=v2v7)|
+| **Chinese-MobileBERT-large-f2** | 1.66GB |TBA|[TensorFlow（密码：6m5a）](https://pan.baidu.com/s/1Kp7n8lQJOtevzMovKSa3kw?pwd=6m5a)|
+| **Chinese-MobileBERT-large-f4** | 1.80GB |TBA|[TensorFlow（密码：3h9b）](https://pan.baidu.com/s/19xz9kH1HmM2Og0Aqn7l6vA?pwd=3h9b)|
+
+> 注：模型中的adam相关参数未删除，故模型文件较大。如有必要请自行删除。
 
 ### PyTorch以及TensorFlow 2版本
+
 TBA
 
 ## 快速加载
