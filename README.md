@@ -8,7 +8,7 @@
         <img alt="GitHub" src="https://img.shields.io/github/license/ymcui/Chinese-MobileBERT.svg?color=blue&style=flat-square">
     </a>
 </p>
-本项目包含使用中文数据训练的 [MobileBERT](https://arxiv.org/abs/2004.02984) 模型。MobileBERT是BERT-large模型更“苗条”的版本，使用了瓶颈结构（bottleneck）并且对自注意力和前馈神经网络之间的平衡做了细致的设计。
+本项目包含使用中文数据训练的[MobileBERT](https://arxiv.org/abs/2004.02984)模型。MobileBERT是BERT-large模型更“苗条”的版本，使用了瓶颈结构（bottleneck）并且对自注意力和前馈神经网络之间的平衡做了细致的设计。
 
 本项目基于谷歌原版MobileBERT实现：https://github.com/google-research/google-research/tree/master/mobilebert
 
