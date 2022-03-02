@@ -12,21 +12,19 @@
 
 本项目基于谷歌原版MobileBERT实现：[谷歌官方MobileBERT项目](https://github.com/google-research/google-research/tree/master/mobilebert)
 
+**说明：本目录仅作为个人存档使用，如有问题还请互助解决。**
+
 ----
 
 [PERT](https://github.com/ymcui/PERT) | [中文MacBERT](https://github.com/ymcui/MacBERT) | [中文ELECTRA](https://github.com/ymcui/Chinese-ELECTRA) | [中文XLNet](https://github.com/ymcui/Chinese-XLNet) | [中文BERT](https://github.com/ymcui/Chinese-BERT-wwm) |  [知识蒸馏工具TextBrewer](https://github.com/airaria/TextBrewer) | [模型裁剪工具TextPruner](https://github.com/airaria/TextPruner)
 
 查看更多哈工大讯飞联合实验室（HFL）发布的资源：https://github.com/ymcui/HFL-Anthology
 
-## 新闻
-2022/3/2   感谢对本项目的关注，预计本周发出模型和代码。
-
 ## 内容导引
 | 章节                                  | 描述                                                         |
 | ------------------------------------- | ------------------------------------------------------------ |
 | [简介](#简介)                         | MobileBERT预训练模型的基本原理                                 |
 | [模型下载](#模型下载)         | 中文MobileBERT预训练模型的下载地址                   |
-| [快速加载](#快速加载)                 | 如何使用[🤗Transformers](https://github.com/huggingface/transformers)快速加载模型 |
 | [基线系统效果](#基线系统效果) | 在部分NLU任务上的基线系统效果                                |
 | [如何预训练和精调任务](#如何预训练和精调任务) | 介绍了如何预训练MobileBERT，以及在下游任务中精调 |
 | [FAQ](#FAQ)                           | 常见问题答疑                                                 |
@@ -62,21 +60,18 @@
 
 > [1] 对照BERT-base是110M（约），BERT-large是330M（约）。
 
-| 模型简称                           | 模型文件大小 | Google下载 |                          百度盘下载                          |
-| :--------------------------------- | :--: | :--------: | :----------------------------------------------------------: |
-| **Chinese-MobileBERT-base-f2** | 672MB |TBA|[TensorFlow（密码：56bj）](https://pan.baidu.com/s/16g1LgXXAV01I-cFgPdeOow?pwd=56bj)|
-| **Chinese-MobileBERT-base-f4** | 737MB |TBA|[TensorFlow（密码：v2v7）](https://pan.baidu.com/s/16SGBJhWFYru47EEyTZJljA?pwd=v2v7)|
-| **Chinese-MobileBERT-large-f2** | 1.66GB |TBA|[TensorFlow（密码：6m5a）](https://pan.baidu.com/s/1Kp7n8lQJOtevzMovKSa3kw?pwd=6m5a)|
-| **Chinese-MobileBERT-large-f4** | 1.80GB |TBA|[TensorFlow（密码：3h9b）](https://pan.baidu.com/s/19xz9kH1HmM2Og0Aqn7l6vA?pwd=3h9b)|
+| 模型简称                           | 模型文件大小 |                          百度盘下载                          |
+| :--------------------------------- | :--: | :----------------------------------------------------------: |
+| **Chinese-MobileBERT-base-f2** | 672MB |[TensorFlow（密码：56bj）](https://pan.baidu.com/s/16g1LgXXAV01I-cFgPdeOow?pwd=56bj)|
+| **Chinese-MobileBERT-base-f4** | 737MB |[TensorFlow（密码：v2v7）](https://pan.baidu.com/s/16SGBJhWFYru47EEyTZJljA?pwd=v2v7)|
+| **Chinese-MobileBERT-large-f2** | 1.66GB |[TensorFlow（密码：6m5a）](https://pan.baidu.com/s/1Kp7n8lQJOtevzMovKSa3kw?pwd=6m5a)|
+| **Chinese-MobileBERT-large-f4** | 1.80GB |[TensorFlow（密码：3h9b）](https://pan.baidu.com/s/19xz9kH1HmM2Og0Aqn7l6vA?pwd=3h9b)|
 
 > 注：模型中的adam相关参数未删除，故模型文件较大。如有必要请自行删除。
 
 ### PyTorch以及TensorFlow 2版本
 
-TBA
-
-## 快速加载
-TBA
+目前使用transformers给出的TF转PT脚本转换本目录中的模型会有一些问题，暂时不提供PT版本下载。
 
 ## 基线系统效果
 为了测试中文MobileBERT的效果，我们选取了6个NLU进行测试，主要分为阅读理解和文本分类两大类。  
@@ -175,7 +170,9 @@ MobileBERT超参：初始学习率6e-5、训练3轮（XNLI为2轮）、batch_siz
 
 ## FAQ
 
-本项目实际完成时间久远，如有问题还请自行查阅资料解决，感谢理解。
+1）本项目实际完成时间久远（2020年），如有问题还请自行查阅资料解决，感谢理解。
+
+2）本项目中的内容仅供参考，实现也并非完全按照谷歌官方的配置进行，请酌情使用。
 
 
 ## 致谢
