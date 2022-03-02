@@ -162,3 +162,14 @@ MobileBERT超参：初始学习率6e-5、训练3轮（XNLI为2轮）、batch_siz
 感谢TPU Research Cloud（TRC）提供TPU训练支持。
 
 I would like to thank TPU Research Cloud (TRC) program for TPU access.
+
+## 引用
+```tex
+@misc{cui-2022-chinese-mobilebert,
+  title={Chinese MobileBERT},
+  author={Cui, Yiming},
+  howpublished={\url{https://github.com/ymcui/Chinese-MobileBERT}},
+  year={2022}
+}
+```
+
