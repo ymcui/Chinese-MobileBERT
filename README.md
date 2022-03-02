@@ -167,8 +167,8 @@ MobileBERT超参：初始学习率6e-5、训练3轮（XNLI为2轮）、batch_siz
 
 ## 如何预训练和精调任务
 
-- 预训练：请查看`pretrain`目录中的[README.md]()。
-- 下游任务精调：请查看`finetune`目录中的[README.md]()。
+- 预训练：请查看`pretrain`目录中的[README.md](./pretrain/README.md)。
+- 下游任务精调：请查看`finetune`目录中的[README.md](./finetune/README.md)。
 
 ## FAQ
 
