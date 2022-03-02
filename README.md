@@ -28,10 +28,22 @@
 | [模型下载](#模型下载)         | 中文MobileBERT预训练模型的下载地址                   |
 | [快速加载](#快速加载)                 | 如何使用[🤗Transformers](https://github.com/huggingface/transformers)快速加载模型 |
 | [基线系统效果](#基线系统效果) | 在部分NLU任务上的基线系统效果                                |
+| [如何预训练和精调任务](#如何预训练和精调任务) | 介绍了如何预训练MobileBERT，以及在下游任务中精调 |
 | [FAQ](#FAQ)                           | 常见问题答疑                                                 |
 
 ## 简介
-TBA
+请直接参考MobileBERT原论文：[MobileBERT: a Compact Task-Agnostic BERT for Resource-Limited Devices](https://arxiv.org/abs/2004.02984)
+
+说明：
+
+- 本目录中的base-f2和base-f4是以[RoBERTa-wwm-ext](https://github.com/ymcui/Chinese-BERT-wwm)为教师模型，训练2M步（batch=384）。
+- 本目录中的large-f2和large-f4是以[RoBERTa-wwm-ext-large](https://github.com/ymcui/Chinese-BERT-wwm)为教师模型，训练2M步（batch=128）。
+
+以下为本项目的目录结构；
+
+- `config`目录：存放了所有模型config，roberta_wwm_ext\*.json是教师模型的config（分别对应base和large），student\*.json是学生模型（也就是MobileBERT）的config。uncased开头的是谷歌英文原版MobileBERT的config（供参考）。
+- `pretrain`目录：提供了预训练MobileBERT的代码（几乎与谷歌原版一致）
+- `finetune`目录：提供了精调XNLI任务的代码
 
 ## 模型下载
 
@@ -153,8 +165,13 @@ MobileBERT超参：初始学习率6e-5、训练3轮（XNLI为2轮）、batch_siz
 | MobileBERT-large-f2 | 84.0 | 83.7 |
 | MobileBERT-large-f4 |  84.4  | 84.3 |
 
+## 如何预训练和精调任务
+
+- 预训练：请查看`pretrain`目录中的[README.md]()。
+- 下游任务精调：请查看`finetune`目录中的[README.md]()。
 
 ## FAQ
+
 本项目实际完成时间久远，如有问题还请自行查阅资料解决，感谢理解。
 
 
